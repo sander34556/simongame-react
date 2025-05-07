@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  @apply box-border;
+}
+
+@layer component {
+  .btn {
+    @apply m-6 inline-block min-h-[200px] max-h-[200px] min-w-[200px]  max-w-[200px] border-[5px] rounded-4xl;
+  }
+  .title {
+    font-family: "Press Start 2P", cursive;
+    font-size: 2rem;
+    margin: 5%;
+    color: #fef2bf;
+  }
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+}
